@@ -74,7 +74,7 @@ function get_platform() {
 function download_release() {
     local version download_path url platform release_tar
 
-    version="v${1#v}"
+    version="${1}"
     download_path="${2}"
     platform="$(get_platform)"
     release_tar="${TOOL_NAME}_no_self_update_${version}_${platform}.tar.gz"
