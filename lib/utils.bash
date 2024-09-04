@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xeuo pipefail
+set -euo pipefail
 
 GH_REPO="https://github.com/creativeprojects/resticprofile"
 TOOL_NAME="resticprofile"
