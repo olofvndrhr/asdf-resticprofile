@@ -79,7 +79,7 @@ function download_release() {
     platform="$(get_platform)"
     release_tar="${TOOL_NAME}_no_self_update_${version}_${platform}.tar.gz"
 
-    url="${GH_REPO}/releases/download/${version}/${release_tar}"
+    url="${GH_REPO}/releases/download/v${version#v}/${release_tar}"
 
     mkdir -p "${download_path}"
 
