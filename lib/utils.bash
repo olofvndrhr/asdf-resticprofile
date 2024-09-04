@@ -39,7 +39,7 @@ function get_platform() {
 
     case "$(uname -s)" in
         "Linux")
-            platform="unknown-linux-musl"
+            platform="linux"
             ;;
         "*BSD")
             _platform="$(uname -s)"
@@ -47,6 +47,9 @@ function get_platform() {
             ;;
         "Darwin")
             platform="darwin"
+            ;;
+        *)
+            fail "This platform is currently not supported"
             ;;
     esac
 
@@ -59,6 +62,9 @@ function get_platform() {
             ;;
         "arm" | "armv7")
             arch="armv7"
+            ;;
+        *)
+            fail "This platform is currently not supported"
             ;;
     esac
 
