@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+current_script_path=${BASH_SOURCE[0]}
+plugin_dir=$(dirname "$(dirname "${current_script_path}")")
+
+# shellcheck source=../lib/utils.bash
+source "${plugin_dir}/lib/utils.bash"
+
+cat << EOF
+> More infos on: https://creativeprojects.github.io/resticprofile/
+
+Configuration profiles manager for restic backup
+
+resticprofile is the missing link between a configuration file and restic backup.
+Creating a configuration file for restic has been discussed before,
+but seems to be a very low priority right now.
+
+EOF
