@@ -37,7 +37,7 @@ asdf list-all resticprofile
 asdf install resticprofile latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global resticprofile latest
+asdf set --home resticprofile latest
 
 # Now resticprofile commands are available
 resticprofile --verbose version
