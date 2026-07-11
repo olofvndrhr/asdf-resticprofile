@@ -31,7 +31,7 @@ resticprofile:
 
 ```shell
 # Show all installable versions
-asdf list-all resticprofile
+asdf list all resticprofile
 
 # Install specific version
 asdf install resticprofile latest
